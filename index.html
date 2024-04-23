@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>长江重要大桥</title>
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css"/>
+    <style>
+        html,body,#container{
+            height:100%;
+            width:100%;
+        }
+        .amap-icon img{
+            width: 50px;
+            height: 68px;
+        }
+
+        .content-window-card {
+            position: relative;
+            box-shadow: none;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            padding: 0;
+        }
+
+        .content-window-card p {
+            height: 2rem;
+        }
+
+        .custom-info {
+            border: solid 1px silver;
+        }
+
+        div.info-top {
+            position: relative;
+            background: none repeat scroll 0 0 #F9F9F9;
+            border-bottom: 1px solid #CCC;
+            border-radius: 5px 5px 0 0;
+        }
+
+        div.info-top div {
+            display: inline-block;
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 31px;
+            padding: 0 10px;
+        }
+
+        div.info-top img {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition-duration: 0.25s;
+        }
+
+        div.info-top img:hover {
+            box-shadow: 0px 0px 5px #000;
+        }
+
+        div.info-middle {
+            font-size: 12px;
+            padding: 10px 6px;
+            line-height: 20px;
+        }
+
+        div.info-bottom {
+            height: 0px;
+            width: 100%;
+            clear: both;
+            text-align: center;
+        }
+
+        div.info-bottom img {
+            position: relative;
+            z-index: 104;
+        }
+
+        span {
+            margin-left: 5px;
+            font-size: 11px;
+        }
+
+        .info-middle img {
+            float: left;
+            margin-right: 6px;
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=cda7516d13324cf30129c39b67d942eb"></script>
+<script type="text/javascript">
+    // 创建地图实例
+    var map = new AMap.Map("container", {
+        zoom: 6.34,
+        center: [110.24241,29.267705],
+        resizeEnable: true
+    });
+
+    var Icon1 = new AMap.Marker({
+        position: new AMap.LngLat(105.4444850000,28.8655610000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+    // 设置鼠标划过点标记显示的文字提示
+    Icon1.setTitle('龙叙铁路泸州长江大桥');
+
+    var Icon2 = new AMap.Marker({
+        position: new AMap.LngLat(106.4282330000,29.3533960000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon3 = new AMap.Marker({
+        position: new AMap.LngLat(107.0602760000,29.8137160000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon4 = new AMap.Marker({
+        position: new AMap.LngLat(108.4226850000,30.7679510000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+
+    var Icon5 = new AMap.Marker({
+        position: new AMap.LngLat(111.5331920000,30.2849950000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon6 = new AMap.Marker({
+        position: new AMap.LngLat(112.3323700000,30.0656840000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon7 = new AMap.Marker({
+        position: new AMap.LngLat(114.3907650000,30.6788160000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon8 = new AMap.Marker({
+        position: new AMap.LngLat(114.9240110000,30.4089800000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon9 = new AMap.Marker({
+        position: new AMap.LngLat(116.0217400000,29.7420760000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon10 = new AMap.Marker({
+        position: new AMap.LngLat(117.2510010000,30.5704100000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon11 = new AMap.Marker({
+        position: new AMap.LngLat(117.9736900000,31.0827950000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon12 = new AMap.Marker({
+        position: new AMap.LngLat(118.3454900000,31.3535850000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon13 = new AMap.Marker({
+        position: new AMap.LngLat(118.3410740000,31.3857370000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon14 = new AMap.Marker({
+        position: new AMap.LngLat(118.6447950000,31.9691120000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var Icon15 = new AMap.Marker({
+        position: new AMap.LngLat(119.6804330000,32.2250100000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/qfs7aMF5.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var IconHL1 = new AMap.Marker({
+        position: new AMap.LngLat(120.7161020000,32.0143050000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/lspQsKZs.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var IconHL2 = new AMap.Marker({
+        position: new AMap.LngLat(118.7494490000,32.1106160000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/lspQsKZs.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var IconHL3 = new AMap.Marker({
+        position: new AMap.LngLat(114.2928740000,30.5472250000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/lspQsKZs.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var IconHL4 = new AMap.Marker({
+        position: new AMap.LngLat(111.3929110000,30.5664920000),
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/lspQsKZs.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    var IconHL5 = new AMap.Marker({
+        position: new AMap.LngLat(106.4307840000,29.3507330000),
+        // position: [106.4307840000,29.3507330000],
+        // 将一张图片的地址设置为 icon
+        icon: 'https://img2.imgtp.com/2024/03/28/lspQsKZs.svg',
+        // 图标所用图片大小
+        imageSize: new AMap.Size(135, 40),
+        // 图标尺寸
+        size: new AMap.Size(50, 68),
+        // 设置了 icon 以后，设置 icon 的偏移量，以 icon 的 [center bottom] 为原点
+        offset: new AMap.Pixel(-26, -60)
+    });
+
+    IconHL1.on('click',function (){
+        infoWindow1.open(map, [120.7161020000,32.0143050000])
+    })
+
+    var title1 = '沪苏通长江公铁大桥<span style="font-size:11px;color:#F00;">通行于:2020年</span>',
+        content1 = [];
+    content1.push("途径铁路：沪苏通铁路");
+    content1.push("<a href='https://baike.baidu.com/item/%E6%B2%AA%E8%8B%8F%E9%80%9A%E9%95%BF%E6%B1%9F%E5%85%AC%E9%93%81%E5%A4%A7%E6%A1%A5/50834222'>详细信息</a>");
+    content1.push("<img src='https://img2.imgtp.com/2024/04/23/s7ImLGbM.jpg'>");
+
+
+    var infoWindow1 = new AMap.InfoWindow({
+        isCustom: true,
+        content: createInfoWindow(title1,content1.join("<br/>")),
+        offset: new  AMap.Pixel(16,-45)
+    })
+
+    IconHL2.on('click',function (){
+        infoWindow2.open(map, [118.7494490000,32.1106160000])
+    })
+
+    var title2 = '南京长江大桥<span style="font-size:11px;color:#F00;">通行于:1968年</span>',
+        content2 = [];
+    content2.push("途径铁路：京沪铁路");
+    content2.push("<a href='https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5/1070999'>详细信息</a>");
+    content2.push("<img src='https://img2.imgtp.com/2024/04/23/kI4gsAva.jpg'>");
+
+
+    var infoWindow2 = new AMap.InfoWindow({
+        isCustom: true,
+        content: createInfoWindow(title2,content2.join("<br/>")),
+        offset: new  AMap.Pixel(16,-45)
+    })
+
+    IconHL3.on('click',function (){
+        infoWindow3.open(map, [114.2928740000,30.5472250000])
+    })
+
+    var title3 = '武汉长江大桥<span style="font-size:11px;color:#F00;">通行于:1957年</span>',
+        content3 = [];
+    content3.push("途径铁路：京广铁路");
+    content3.push("<a href='https://baike.baidu.com/item/%E6%AD%A6%E6%B1%89%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5/320899'>详细信息</a>");
+    content3.push("<img src='https://img2.imgtp.com/2024/04/23/oyCxpB7k.jpg'>");
+
+    var infoWindow3 = new AMap.InfoWindow({
+        isCustom: true,
+        content: createInfoWindow(title3,content3.join("<br/>")),
+        offset: new  AMap.Pixel(16,-45)
+    })
+
+    IconHL4.on('click',function (){
+        infoWindow4.open(map, [111.3929110000,30.5664920000])
+    })
+
+    var title4 = '宜昌长江大桥<span style="font-size:11px;color:#F00;">通行于:2001年</span>',
+        content4 = [];
+    content4.push("途径铁路：宜万铁路");
+    content4.push("<a href='https://baike.baidu.com/item/%E5%AE%9C%E6%98%8C%E9%95%BF%E6%B1%9F%E5%85%AC%E8%B7%AF%E5%A4%A7%E6%A1%A5?fromtitle=%E5%AE%9C%E6%98%8C%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5&fromid=10787673&fromModule=lemma_search-box'>详细信息</a>");
+    content4.push("<img src='https://img2.imgtp.com/2024/04/23/CydG38Oq.jpg'>");
+
+    var infoWindow4 = new AMap.InfoWindow({
+        isCustom: true,
+        content: createInfoWindow(title4,content4.join("<br/>")),
+        offset: new  AMap.Pixel(16,-45)
+    })
+
+    IconHL5.on('click',function (){
+        infoWindow5.open(map, [106.4307840000,29.3507330000])
+    })
+
+    var title5 = '新白沙沱长江特大桥<span style="font-size:11px;color:#F00;">建成于:2018年</span>',
+        content5 = [];
+    content5.push("途径铁路：渝贵铁路");
+    content5.push("<a href='https://www.gov.cn/xinwen/2018-01/11/content_5255619.htm#1'>详细信息</a>");
+    content5.push("<img src='https://img2.imgtp.com/2024/04/23/2dRrn7iw.jpg'>");
+
+
+    var infoWindow5 = new AMap.InfoWindow({
+        isCustom: true,
+        content: createInfoWindow(title5,content5.join("<br/>")),
+        offset: new  AMap.Pixel(16,-45)
+    })
+
+
+
+
+    Icon1.setTitle('龙叙铁路泸州长江大桥');
+    Icon2.setTitle('川黔铁路白沙沱长江铁路大桥');
+    Icon3.setTitle('渝怀铁路长寿长江大桥');
+    Icon4.setTitle('宜万铁路万州长江大桥');
+    Icon5.setTitle('焦柳铁路枝城长江大桥');
+    Icon6.setTitle('浩吉铁路荆州长江公铁两用特大桥');
+    Icon7.setTitle('京广高铁武汉天兴洲长江大桥');
+    Icon8.setTitle('武黄城际铁路黄冈长江大桥');
+    Icon9.setTitle('京九铁路九江长江大桥');
+    Icon10.setTitle('宁安高铁安庆长江铁路大桥');
+    Icon11.setTitle('合福高铁铜陵长江公铁大桥');
+    Icon12.setTitle('商合杭高铁芜湖长江三桥');
+    Icon13.setTitle('皖赣铁路芜湖长江大桥');
+    Icon14.setTitle('京沪高铁南京大胜关长江大桥');
+    Icon15.setTitle('连镇高铁五峰山长江大桥');
+    IconHL1.setTitle('沪苏通铁路沪苏通长江公铁大桥');
+    IconHL2.setTitle('京沪铁路南京长江大桥');
+    IconHL3.setTitle('京广铁路武汉长江大桥');
+    IconHL4.setTitle('宜万铁路宜昌长江大桥');
+    IconHL5.setTitle('渝贵铁路新白沙沱长江特大桥');
+    // 将 markers 添加到地图
+    map.add([Icon1,Icon2,Icon3,Icon4,Icon5,Icon6,Icon7,Icon8,Icon9,Icon10,Icon11,Icon12,Icon13,Icon14,Icon15,IconHL1,IconHL2,IconHL3,IconHL4,IconHL5]);
+
+    function createInfoWindow(title, content) {
+        var info = document.createElement("div");
+        info.className = "custom-info input-card content-window-card";
+
+        //可以通过下面的方式修改自定义窗体的宽高
+        info.style.width = "500px";
+        // 定义顶部标题
+        var top = document.createElement("div");
+        var titleD = document.createElement("div");
+        var closeX = document.createElement("img");
+        top.className = "info-top";
+        titleD.innerHTML = title;
+        closeX.src = "https://webapi.amap.com/images/close2.gif";
+        closeX.onclick = closeInfoWindow;
+
+        top.appendChild(titleD);
+        top.appendChild(closeX);
+        info.appendChild(top);
+
+        // 定义中部内容
+        var middle = document.createElement("div");
+        middle.className = "info-middle";
+        middle.style.backgroundColor = 'white';
+        middle.innerHTML = content;
+        info.appendChild(middle);
+
+        // 定义底部内容
+        var bottom = document.createElement("div");
+        bottom.className = "info-bottom";
+        bottom.style.position = 'relative';
+        bottom.style.top = '0px';
+        bottom.style.margin = '0 auto';
+        var sharp = document.createElement("img");
+        sharp.src = "https://webapi.amap.com/images/sharp.png";
+        bottom.appendChild(sharp);
+        info.appendChild(bottom);
+        return info;
+    }
+
+    //关闭信息窗体
+    function closeInfoWindow() {
+        map.clearInfoWindow();
+    }
+
+</script>
+</body>
+</html>
